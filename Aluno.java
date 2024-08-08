@@ -1,15 +1,33 @@
-import java.util.Date;
+
 
 public class Aluno {
     
     private String nome;
     private String nivel;
-    private Date dtnascimento;
+    private String dtnascimento;
     private String genero;
     private double altura;
     private double peso;
 
-    
+    public Aluno(String nome, String nivel, String dtnascimento, String genero, double altura, double peso){
+
+        this.nome = nome;
+        this.nivel = nivel;
+        this.dtnascimento = dtnascimento;
+        this.genero = genero;
+        this.altura= altura;
+        this.peso = peso;
+
+    }
+
+    public Aluno(String nome, String nivel, String dtnascimento, String genero){
+
+        this.nome = nome;
+        this.nivel = nivel;
+        this.dtnascimento = dtnascimento;
+        this.genero = genero;
+
+    }
 
     public String getNome(){
         return nome;
@@ -25,10 +43,10 @@ public class Aluno {
         this.nome = nivel;
     }
 
-    public Date getDtnascimento(){
+    public String getDtnascimento(){
         return dtnascimento;
     }
-    public void setDtnascimento(Date dtnascimento){
+    public void setDtnascimento(String dtnascimento){
         this.dtnascimento = dtnascimento;
     }
     
