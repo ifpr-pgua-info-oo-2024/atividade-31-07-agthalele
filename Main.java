@@ -1,3 +1,6 @@
+import java.text.ParseException;
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
         //declarando objetos do tipo Academia e os instanciando (preenchendo)
@@ -26,11 +29,14 @@ public class Main {
         System.out.println("Objeto2 -> \nNome: "+ obj2.getNome() +"\nEndereço: "+ obj2.getEndereco() +"\nTelefone: "+ obj2.getTelefone() + "\n");
         System.out.println("Objeto3 -> \nNome: "+ obj3.getNome() +"\nEndereço: "+ obj3.getEndereco() +"\nTelefone: "+ obj3.getTelefone() + "\n");
 
+
+       
+
         Aluno obj01 = new Aluno("Carlão", "Superior", "12/12/1996", "masculino");
         Aluno obj02 = new Aluno("Ricardão", "Intermediario", "15/03/2000", "masculino");
         Aluno obj03 = new Aluno("Victoria", "Senior", "04/06/2001", "feminino");
 
-        
+         
 
       }
     }
