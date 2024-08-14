@@ -1,9 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Academia {
 
     //objetos da entidade Academia
     private String nome;
     private String endereco;
     private String telefone;
+
+    List<Aluno> Alunos;
 
     //métodos da Academia:
 
@@ -12,6 +17,7 @@ public class Academia {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
+        Alunos = new ArrayList<>();
 
     }
 
