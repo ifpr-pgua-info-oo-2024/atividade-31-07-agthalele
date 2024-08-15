@@ -5,56 +5,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-      Scanner teclado = new Scanner(System.in);
-      int resp;
-      String nome;
-      String endereco;
-      String telefone;
-      String nascimento;
-      String genero;
-      double altura;
-      double peso;
-      int a = 1;
-
-      do{
-
-      System.out.println("1 - Criar Academia\n2 - Adicionar Aluno\n3 - Ver Academia\n4 - Ver Alunos");
-      resp = teclado.nextInt();
-
-      if(resp == 1){
-
-        System.out.println("Nome da Nova Academia:");
-        nome = teclado.next();
-        System.out.println("\nEndereço:");
-        endereco = teclado.next();
-        System.out.println("\nTelefone:");
-        telefone = teclado.next();
-        System.out.println("sajfbvsi");
-
-        Academia academia1 = new Academia(nome, endereco, telefone);
-
-        System.out.println("\nAcademia Cadrastada!!\n\n ->"+ academia1.getNome() + ":\n  Endereço: "+ academia1.getEndereco() + "\n  Telefone: "+ academia1.getTelefone());
-
-      }
-      else if(resp == 2){
-
-        System.out.println("Nome do Novo Aluno: ");
-        nome = teclado.next();
-        System.out.println("Data de Nascimento: ");
-        nascimento = teclado.next();
-        System.out.println("Genero: ");
-        genero = teclado.next();
-        System.out.println("Altura: ");
-        altura = teclado.nextDouble();
-        System.out.println("Peso: ");
-        peso = teclado.nextDouble();
-
-        
-
-      }
-
-    }while(a != -1);
-
 
         //declarando objetos do tipo Academia e os instanciando (preenchendo)
         /*Academia obj1 = new Academia("Shrek", "Pântano", "12345678");
