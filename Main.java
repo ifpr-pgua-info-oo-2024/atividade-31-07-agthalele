@@ -4,6 +4,8 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in);
 
+        Banco banco = new Banco("Banco do Brasil");
+
         System.out.println("Nome: ");
         String nome = teclado.nextLine( );
 
@@ -11,6 +13,7 @@ public class Main {
         String cpf = teclado.nextLine( );
 
         ClientePF clientepf = new ClientePF(nome, cpf);
+        banco.adicionaCliente(clientepf);
 
         //fariamos a mesma coisa para juridica
         System.out.println("Empresa: ");
@@ -20,6 +23,24 @@ public class Main {
         String cnpj = teclado.nextLine( );
 
         ClientePJ clientecnpj = new ClientePJ(empresa, cnpj);
+        banco.adicionaCliente(clientecnpj);
 
+       ArrayList<Cliente> listaDeClientes = banco.getClientes();
+
+       for(int i = 0; i< listaDeClientes.size(); i++){
+  
+        System.out.println("-------------------------------");
+        
+        Cliente item = cliente.get(i);
+        System.out.println(item.getNome());
+
+        System.out.println("-------------------------------");
+       }
+
+       for(Cliente item : listaDeCliente){
+        System.out.println("-------------------------------");
+        System.out.println(item.getNome());
+        System.out.println("-------------------------------");
+       }
     }
 }
