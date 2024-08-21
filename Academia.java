@@ -4,7 +4,7 @@ import java.util.List;
 public class Academia {
 
     //objetos da entidade Academia
-    private String nome;
+    private String nomeacademia;
     private String endereco;
     private String telefone;
 
@@ -12,20 +12,20 @@ public class Academia {
 
     //métodos da Academia:
 
-    public Academia(String nome, String endereco, String telefone) {
+    public Academia(String nomeacademia, String endereco, String telefone) {
 
-        this.nome = nome;
+        this.nomeacademia = nomeacademia;
         this.endereco = endereco;
         this.telefone = telefone;
         Alunos = new ArrayList<>();
 
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeAcademia() {
+        return nomeacademia;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nomeacademia) {
+        this.nomeacademia = nomeacademia;
     }
     
     public String getEndereco() {
