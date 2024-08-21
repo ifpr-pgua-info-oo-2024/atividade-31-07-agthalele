@@ -1,0 +1,48 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+      int op = 0;
+      Scanner teclado = new Scanner(System.in);
+
+      do{
+
+        System.out.println("1 - Criar Academia \n 2 - Criar Aluno\n 0 - Sair");
+        op = teclado.nextInt();
+
+        if(op == 1){
+          System.out.print("Nome: ");
+          String nomeacademia = teclado.next();
+          System.out.print("Endereço: ");
+          String endereco = teclado.next();
+          System.out.print("Telefone: ");
+          String telefone = teclado.next();
+
+          Academia academia1 = new Academia(nomeacademia, endereco, telefone);
+
+          System.out.print("Academia nova\n"+getNomeAcademia()+"\n"+getEndereco+"\n"+getTelefone);
+
+        }
+
+        else if(op == 2){
+
+          System.out.println("Nome: ");
+          String nomealuno = teclado.next();
+          System.out.println("Nível: ");
+          String nivel = teclado.next();
+          System.out.println("Data de Nascimento (dd/MM/yyyy): ");
+          String nascimento = teclado.next();
+
+          Aluno aluno1 = new Aluno(nomealuno, nivel, nascimento);
+          System.out.println("Aluno(a) Novo(a):\n"+ getNome+"\n"+getNivel+"\n"+getDtnascimento);
+
+        }
+
+      }while( op != -1);
+      
+    }
+  }
